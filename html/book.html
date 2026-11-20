@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Golden Heyday Caterers</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/book.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <span>📍 KIZHAKKAMBALAM, KERALA</span>
+        <span class="top-center">✨ NOW TAKING WEDDING & EVENT BOOKINGS</span>
+        <span class="top-right">
+            <a href="tel:+919388483565">+91 93884 83565</a>
+            <span>|</span>
+            <a href="https://instagram.com/goldenheyday.caterers" target="_blank">@goldenheyday.caterers</a>
+        </span>
+    </div>
+
+    <header class="main-nav">
+        <a href="home.html" class="logo-img">
+            <img src="../images/logo.png" alt="Golden Heyday Caterers">
+        </a>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="menus.html">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="tel:+919388483565" class="book-btn">Call Now →</a>
+    </header>
+
+    <section class="book-hero">
+        <img src="https://www.livemint.com/lm-img/img/2024/09/08/960x540/Kappa_Chakka_Kandhari_Ona_sadya_1725822170539_1725822184033.jpg" alt="Kerala Sadya" class="book-hero-img">
+        <div class="book-hero-overlay"></div>
+        <div class="book-hero-content">
+            <p class="book-hero-tag">✦ LIMITED DATES AVAILABLE ✦</p>
+            <h1>Book Your <span>Feast</span><br>Before The Date Fills.</h1>
+            <p>Fill the form in 1 minute. We will call you back within 30 minutes and confirm your menu, price &
+                availability.</p>
+            <div class="book-hero-points">
+                <span>✔ No Advance For Enquiry</span>
+                <span>✔ Free Menu Planning</span>
+                <span>✔ On-Time Service</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-main">
+        <div class="book-container">
+
+            <div class="book-form-card">
+                <span class="form-eyebrow">BOOKING FORM</span>
+                <h2>Check Availability & Get Free Quote</h2>
+                <p class="form-sub">Tell us about your event, we will plan everything.</p>
+
+                <form id="bookingForm">
+                    <label>Your Name *</label>
+                    <input type="text" id="name" placeholder="Eg: Anu Mohan" required>
+
+                    <label>Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="Eg: 98765 43210" required>
+
+                    <label>Event Type *</label>
+                    <div class="chip-wrap">
+                        <label class="chip"><input type="radio" name="event" value="Wedding" checked> Wedding</label>
+                        <label class="chip"><input type="radio" name="event" value="Engagement"> Engagement</label>
+                        <label class="chip"><input type="radio" name="event" value="Birthday"> Birthday</label>
+                        <label class="chip"><input type="radio" name="event" value="Corporate"> Corporate</label>
+                        <label class="chip"><input type="radio" name="event" value="Other"> Other</label>
+                    </div>
+
+                    <div class="row2">
+                        <div>
+                            <label>Event Date *</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div>
+                            <label>Time</label>
+                            <select id="time">
+                                <option>Morning</option>
+                                <option>Afternoon</option>
+                                <option>Evening</option>
+                                <option>Full Day</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div>
+                            <label>Expected Guests *</label>
+                            <select id="guests">
+                                <option>Below 100</option>
+                                <option>100 - 300</option>
+                                <option>300 - 500</option>
+                                <option>500 - 1000</option>
+                                <option>1000+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Event Location *</label>
+                            <input type="text" id="place" placeholder="Eg: Kizhakkambalam" required>
+                        </div>
+                    </div>
+
+                    <label>Menu Preference</label>
+                    <select id="menu">
+                        <option>Kerala Sadya - Traditional</option>
+                        <option>Kerala Sadya + Non-Veg</option>
+                        <option>Breakfast Menu</option>
+                        <option>Buffet / Mixed Menu</option>
+                        <option>Custom Menu - Need Help</option>
+                    </select>
+
+                    <label>Any Special Note?</label>
+                    <textarea id="note" rows="3" placeholder="Eg: Veg only, Payasam needed, Hall name..."></textarea>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="book-side">
+                <div class="side-card dark">
+                    <h3>Need Urgent Booking?</h3>
+                    <p>Call us directly, we will confirm in 2 minutes.</p>
+                    <a href="tel:+919388483565" class="side-call">📞 +91 93884 83565</a>
+                    <a href="https://wa.me/919388483565?text=Hi%20Golden%20Heyday!%20I%20want%20to%20book%20catering."
+                        target="_blank" class="side-wa">💬 Chat on WhatsApp</a>
+                    <p class="side-time">⏰ Open: 8 AM - 10 PM, All Days</p>
+                </div>
+
+                <div class="side-card light">
+                    <h3>How Booking Works</h3>
+                    <div class="step">
+                        <span>1</span>
+                        <div>
+                            <b>Send Enquiry</b>
+                            <p>Fill form or WhatsApp us</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <div>
+                            <b>We Call You</b>
+                            <p>Menu, price & date confirm</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>3</span>
+                        <div>
+                            <b>Advance & Confirm</b>
+                            <p>Small advance to lock date</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>4</span>
+                        <div>
+                            <b>We Serve</b>
+                            <p>You enjoy, we handle feast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="menus.html" class="side-image-card">
+                    <img src="https://images.timesnownews.com/thumb/msid-155987913,width-1200,height-1600,resizemode-75/155987913.jpg" alt="Wedding Feast">
+                    <div class="side-image-text">
+                        <h3>Traditional Sadya, Perfectly Served.</h3>
+                        <p>Fresh banana leaf, authentic taste, on-time service.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3 class="footer-logo">GOLDEN HEYDAY <span>CATERERS</span></h3>
+        <p>Premium catering for weddings and celebrations.</p>
+        <p>
+            <a href="home.html">Home</a> |
+            <a href="services.html">Services</a> |
+            <a href="menus.html">Menus</a> |
+            <a href="gallery.html">Gallery</a>
+        </p>
+        <p class="footer-contact">
+            <a href="tel:+919388483565">+91 93884 83565</a> |
+            <a href="mailto:goldenheydaycaterers@gmail.com">goldenheydaycaterers@gmail.com</a> |
+            <a href="https://instagram.com/goldenheyday.caterers" target="_blank">@goldenheyday.caterers</a>
+        </p>
+        <p class="footer-copy">© 2026 Golden Heyday Caterers, Kizhakkambalam, Kerala</p>
+    </footer>
+
+    <a href="https://wa.me/919388483565?text=Hi%20Golden%20Heyday!%20I%20want%20to%20book%20catering." target="_blank"
+        class="wa-float">💬</a>

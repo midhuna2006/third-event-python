@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topbar {
+    background: #2A0505;
+    color: #F5E6C8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 40px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.topbar a {
+    color: #F5E6C8;
+}
+
+.main-nav {
+    background: #FFFBF2;
+    display: flex;
+    align-items: center;
+    padding: 5px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #bda773;
+}
+
+.logo-img img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #4A0A0A;
+    border-bottom: 2px solid #4A0A0A;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #4A0A0A;
+    padding-bottom: 3px;
+}
+
+.book-btn {
+    background: #4A0A0A;
+    color: #F5E6C8;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.book-btn:hover {
+    background: #9d2121;
+}
+
+.contact-hero {
+    background: #FFF8EC;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #F0E0B6;
+}
+
+.eyebrow {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+}
+
+.contact-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    margin: 10px 0 12px;
+    color: #2A0505;
+}
+
+.contact-hero h1 span {
+    color: #C9A227;
+    font-style: italic;
+}
+
+.contact-hero p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.btn-gold {
+    background: #E8B84B;
+    color: #2A0505;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-outline-dark {
+    border: 1.5px solid #2A0505;
+    color: #2A0505;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.wrap {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    background: #FFF8EC;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.info-card {
+    background: #fff;
+    border: 1px solid #F0E0B6;
+    border-radius: 16px;
+    padding: 24px 18px;
+    text-align: center;
+    color: #2A0505;
+    display: block;
+}
+
+.info-card:hover {
+    border-color: #C9A227;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.info-card span {
+    font-size: 30px;
+}
+
+.info-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    margin: 10px 0 6px;
+}
+
+.info-card p {
+    font-size: 13.5px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    word-break: break-word;
+}
+
+.info-card small {
+    font-size: 12px;
+    color: #777;
+}
+
+.contact-section {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    background: #fff;
+    border: 1px solid #F0E0B6;
+    border-radius: 18px;
+    padding: 32px 28px;
+    width: 65%;
+}
+
+.cat {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #C9A227;
+}
+
+.form-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #2A0505;
+    margin: 8px 0 8px;
+}
+
+.form-box > p {
+    font-size: 14px;
+    color: #777;
+    margin: 0 0 20px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.field {
+    flex: 1;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2A0505;
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: 12px 14px;
+    border: 1px solid #E5D9B5;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background: #FFFBF2;
+    width: 100%;
+    outline: none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #C9A227;
+    background: #fff;
+}
+
+.btn-submit {
+    background: #2A0505;
+    color: #F5E6C8;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: #9d2121;
+}
+
+.form-note {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.side-box {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-box > h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #2A0505;
+    margin: 6px 0 0;
+}
+
+.side-box ul {
+    list-style: none;
+    background: #fff;
+    border: 1px solid #F0E0B6;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-box ul li {
+    font-size: 13.5px;
+    color: #333;
+}
+
+.side-cta {
+    background: #2A0505;
+    border-radius: 16px;
+    padding: 24px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.side-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #E8B84B;
+}
+
+.side-cta h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin: 8px 0 6px;
+}
+
+.side-phone {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.btn-gold-small {
+    display: inline-block;
+    background: #E8B84B;
+    color: #2A0505;
+    padding: 11px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hours-box {
+    background: #fff;
+    border: 1px solid #F0E0B6;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.hours-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #2A0505;
+    margin-bottom: 12px;
+}
+
+.hours-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px dashed #E5D9B5;
+    margin: 0;
+}
+
+.hours-box p:last-child {
+    border-bottom: none;
+}
+
+.map-box {
+    background: #fff;
+    border: 1px solid #F0E0B6;
+    border-radius: 18px;
+    padding: 28px;
+    text-align: center;
+}
+
+.map-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #2A0505;
+    margin-bottom: 6px;
+}
+
+.map-box > p {
+    font-size: 14px;
+    color: #777;
+    margin: 0 0 20px;
+}
+
+.map-placeholder {
+    background: #FFF8EC;
+    border: 1px dashed #C9A227;
+    border-radius: 14px;
+    padding: 30px 20px;
+}
+
+.map-placeholder span {
+    font-size: 36px;
+}
+
+.map-placeholder h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #2A0505;
+    margin: 10px 0 4px;
+}
+
+.map-placeholder p {
+    font-size: 13.5px;
+    color: #777;
+    margin: 0 0 16px;
+}
+
+.footer {
+    background: #1A0202;
+    color: #D8C9A3;
+    padding: 45px 20px 25px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.footer h3 span {
+    color: #E8B84B;
+    font-style: italic;
+}
+
+.footer p {
+    font-size: 13.5px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+.footer a {
+    color: #F5E6C8;
+}
+
+.footer a:hover {
+    color: #E8B84B;
+}
+
+.copy {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 18px;
+}
+
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 26px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

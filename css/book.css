@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+    background: linear-gradient(90deg, #2A0505, #4A0A0A, #2A0505);
+    color: #F5E6C8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 40px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #cb8205;
+}
+
+.top-center {
+    margin-right: auto;
+    margin-left: 335px;
+    font-size: 13px;
+}
+
+.top-right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.top-right a {
+    color: #F5E6C8;
+    text-decoration: none;
+}
+
+.main-nav {
+    background: #FFFBF2;
+    display: flex;
+    align-items: center;
+    padding: 5px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #bda773;
+}
+
+.logo-img img {
+    height: 60px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #4A0A0A;
+    border-bottom: 2px solid #4A0A0A;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #4A0A0A;
+    padding-bottom: 3px;
+}
+
+.book-btn {
+    background: linear-gradient(135deg, #4A0A0A, #7A1515);
+    color: #F5E6C8;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.book-hero {
+    position: relative;
+    background: #1A0202;
+    height:600px;
+    min-height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.book-hero-img {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.book-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(26, 2, 2, 0.96) 0%, rgba(26, 2, 2, 0.82) 42%, rgba(26, 2, 2, 0.35) 70%, rgba(26, 2, 2, 0.15) 100%);
+    z-index: 1;
+}
+
+.book-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding-left: 80px;
+    padding-right: 20px;
+    max-width: 700px;
+    color: #FFFFFF;
+}
+
+.book-hero-tag {
+    color: #E8B84B;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.book-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.book-hero-content h1 span {
+    color: #E8B84B;
+    font-style: italic;
+}
+
+.book-hero-content p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #EDEDED;
+}
+
+.book-hero-points {
+    display: flex;
+    gap: 18px;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #E8B84B;
+    flex-wrap: wrap;
+}
+
+.book-main {
+    background: #FFF8EC;
+    padding: 60px 20px 70px;
+}
+
+.book-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 26px;
+    align-items: start;
+}
+
+.book-form-card {
+    background: #FFFFFF;
+    border: 1px solid #F0E0B6;
+    border-radius: 22px;
+    padding: 32px 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+.form-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #C9A227;
+}
+
+.book-form-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #2A0505;
+    margin: 8px 0 6px;
+}
+
+.form-sub {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 22px;
+}
+
+.book-form-card label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #2A0505;
+    margin: 14px 0 7px;
+}
+
+.book-form-card input,
+.book-form-card select,
+.book-form-card textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid #E8D9A8;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+    background: #FFFBF2;
+}
+
+.book-form-card input:focus,
+.book-form-card select:focus,
+.book-form-card textarea:focus {
+    border-color: #C9A227;
+    background: #FFFFFF;
+}
+
+.chip-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    background: #FFF3D6;
+    border: 1.5px solid #F0E0B6;
+    border-radius: 50px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+}
+
+.chip input {
+    width: auto !important;
+    padding: 0 !important;
+    accent-color: #4A0A0A;
+}
+
+.chip:has(input:checked) {
+    background: #2A0505;
+    color: #FFFFFF;
+    border-color: #2A0505;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 22px;
+    background: #E8B84B;
+    color: #2A0505;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #2A0505;
+    color: #FFFFFF;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 12.5px;
+    color: #999999;
+    margin-top: 10px;
+}
+
+.book-side {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.side-card {
+    border-radius: 20px;
+    padding: 26px;
+}
+
+.side-card.dark {
+    background: #2A0505;
+    color: #FFFFFF;
+}
+
+.side-card.dark h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.side-card.dark p {
+    font-size: 14px;
+    color: #EDEDED;
+    margin: 8px 0 16px;
+    line-height: 1.6;
+}
+
+.side-call {
+    display: block;
+    background: #E8B84B;
+    color: #2A0505;
+    text-align: center;
+    padding: 13px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.side-wa {
+    display: block;
+    border: 1.5px solid #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 13px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.side-time {
+    margin-top: 14px !important;
+    font-size: 13px !important;
+    color: #F5E6C8 !important;
+    text-align: center;
+}
+
+.side-card.light {
+    background: #FFFFFF;
+    border: 1px solid #F0E0B6;
+}
+
+.side-card.light h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #2A0505;
+    margin-bottom: 16px;
+}
+
+.step {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.step span {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background: #FFF3D6;
+    color: #2A0505;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.step b {
+    font-size: 14px;
+    color: #2A0505;
+}
+
+.step p {
+    font-size: 13px;
+    color: #777777;
+    margin: 2px 0 0;
+}
+
+.side-image-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 260px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.side-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.side-image-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px;
+    color: #FFFFFF;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.side-image-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.side-image-text p {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #EDEDED;
+}
+
+.footer {
+    background: #1A0202;
+    color: #D8C9A3;
+    padding: 45px 20px 25px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+
+.footer-logo span {
+    color: #E8B84B;
+    font-style: italic;
+}
+
+.footer p {
+    font-size: 13.5px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+.footer a {
+    color: #F5E6C8;
+    text-decoration: none;
+}
+.footer a:hover{
+    color:#cb8205;
+}
+.footer-copy {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 18px;
+}
+.footer-contact a:hover{
+    color:#cb8205;
+}
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 26px;
+    text-decoration: none;
+}
+

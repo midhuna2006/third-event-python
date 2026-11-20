@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Menu | Golden Heyday Caterers</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/customize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <span>📍 KIZHAKKAMBALAM, KERALA</span>
+        <span>✨ NOW TAKING WEDDING & EVENT BOOKINGS</span>
+        <span><a href="tel:+919388483565">+91 93884 83565</a></span>
+    </div>
+
+    <header class="main-nav">
+        <div class="logo-img">
+            <img src="../images/logo.png" alt="Golden Heyday Caterers">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="menus.html" class="active">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="../html/book.html" class="book-btn">Book Now →</a>
+    </header>
+
+    <section class="custom-hero">
+        <p class="eyebrow">✦ MAKE IT YOURS ✦</p>
+        <h1>Customize Your <span>Menu</span></h1>
+        <p>Select your event details and favourite items. We will plan a custom menu for you.</p>
+        <a href="menus.html" class="back-link">← Back To All Menus</a>
+    </section>
+
+    <main class="wrap">
+        <form class="custom-form" onsubmit="sendCustomMenu(event)">
+            <!-- STEP 1 -->
+            <div class="form-card">
+                <h2><span class="step">1</span> Your Event Details</h2>
+                <div class="form-grid">
+                    <div class="field">
+                        <label>Your Name *</label>
+                        <input type="text" id="cName" placeholder="Ex: Anu" required>
+                    </div>
+                    <div class="field">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="cPhone" placeholder="Ex: 98765 43210" required>
+                    </div>
+                    <div class="field">
+                        <label>Event Type *</label>
+                        <select id="cEvent" required>
+                            <option value="">Select Event</option>
+                            <option>Wedding</option>
+                            <option>Engagement</option>
+                            <option>Birthday</option>
+                            <option>Corporate Event</option>
+                            <option>Family Function</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Event Date *</label>
+                        <input type="date" id="cDate" required>
+                    </div>
+                    <div class="field">
+                        <label>Guest Count *</label>
+                        <select id="cGuests" required>
+                            <option value="">Select Guests</option>
+                            <option>50 - 100 Guests</option>
+                            <option>100 - 300 Guests</option>
+                            <option>300 - 500 Guests</option>
+                            <option>500 - 1000 Guests</option>
+                            <option>1000+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Serving Style</label>
+                        <select id="cStyle">
+                            <option>Buffet</option>
+                            <option>Plated / Sadya Style</option>
+                            <option>Both</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2><span class="step">2</span> Select Your Items</h2>
+                <p class="hint">Tick cheytha items mathram nee select cheythathu aayi povum.</p>
+
+                <h3 class="group-title">Sadya Items</h3>
+                <div class="check-grid">
+                    <label><input type="checkbox" name="item" value="Sadya Rice"> Sadya Rice</label>
+                    <label><input type="checkbox" name="item" value="Sambar"> Sambar</label>
+                    <label><input type="checkbox" name="item" value="Aviyal"> Aviyal</label>
+                    <label><input type="checkbox" name="item" value="Erissery"> Erissery</label>
+                    <label><input type="checkbox" name="item" value="Olan"> Olan</label>
+                    <label><input type="checkbox" name="item" value="Thoran"> Thoran</label>
+                    <label><input type="checkbox" name="item" value="Pappadam"> Pappadam</label>
+                    <label><input type="checkbox" name="item" value="Pickle"> Pickle</label>
+                    <label><input type="checkbox" name="item" value="Payasam"> Payasam</label>
+                </div>
+
+                <h3 class="group-title">Breakfast Items</h3>
+                <div class="check-grid">
+                    <label><input type="checkbox" name="item" value="Idli"> Idli</label>
+                    <label><input type="checkbox" name="item" value="Idiyappam"> Idiyappam</label>
+                    <label><input type="checkbox" name="item" value="Appam"> Appam</label>
+                    <label><input type="checkbox" name="item" value="Puttu"> Puttu</label>
+                    <label><input type="checkbox" name="item" value="Dosa"> Dosa</label>
+                    <label><input type="checkbox" name="item" value="Poori Masala"> Poori Masala</label>
+                </div>
+
+                <h3 class="group-title">Main-Course Items</h3>
+                <div class="check-grid">
+                    <label><input type="checkbox" name="item" value="Biriyani"> Biriyani</label>
+                    <label><input type="checkbox" name="item" value="Fried Rice"> Fried Rice</label>
+                    <label><input type="checkbox" name="item" value="Chapati"> Chapati</label>
+                    <label><input type="checkbox" name="item" value="Parotta"> Parotta</label>
+                    <label><input type="checkbox" name="item" value="Chicken Curry"> Chicken Curry</label>
+                    <label><input type="checkbox" name="item" value="Veg Curry"> Veg Curry</label>
+                </div>
+
+                <h3 class="group-title">Snacks & Refreshments</h3>
+                <div class="check-grid">
+                    <label><input type="checkbox" name="item" value="Pazham Pori"> Pazham Pori</label>
+                    <label><input type="checkbox" name="item" value="Uzhunnu Vada"> Uzhunnu Vada</label>
+                    <label><input type="checkbox" name="item" value="Parippu Vada"> Parippu Vada</label>
+                    <label><input type="checkbox" name="item" value="Cutlet"> Cutlet</label>
+                    <label><input type="checkbox" name="item" value="Samosa"> Samosa</label>
+                    <label><input type="checkbox" name="item" value="Tea / Coffee"> Tea / Coffee</label>
+                    <label><input type="checkbox" name="item" value="Juice / Welcome Drink"> Juice / Welcome Drink</label>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2><span class="step">3</span> Anything Else?</h2>
+                <div class="field">
+                    <label>Your Message / Special Requirements</label>
+                    <textarea id="cMsg" rows="4" placeholder="Ex: Veg only, No onion garlic, Extra payasam venam..."></textarea>
+                </div>
+                <button type="submit" class="btn-gold-big">Submit →</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <h3>GOLDEN HEYDAY <span>CATERERS</span></h3>
+        <p>Premium catering for weddings and celebrations.</p>
+        <p><a href="tel:+919388483565">+91 93884 83565</a> | <a href="mailto:goldenheydaycaterers@gmail.com">goldenheydaycaterers@gmail.com</a></p>
+        <p class="copy">© 2026 Golden Heyday Caterers, Kizhakkambalam, Kerala</p>
+    </footer>
+</body>
+</html>
